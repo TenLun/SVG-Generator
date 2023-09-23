@@ -1,18 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        div{
-            border-style:solid;
-            border-width:1px;
-        }
-        h1{
-            text-align:right;
-        }
-    </style>
-    <meta name="content-type"; charset="UTF-8">
-<body>
-<div>
-    <h1><?php echo $_GET["name"];?>
-</div>
-</body>
+<?php
+$str = $_GET["name"];
+$colors = array("red","green","yellow","blue");
+for ($i=0; $i<=strlen($str); $i++)
+{
+    $sel = $colors[rand(0,4)];
+    $result = substr($str, $i, 1);
+    echo "<a style='color:$sel'>$result</a>";
+}
+?>
