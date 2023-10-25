@@ -1,14 +1,16 @@
 function getParams () {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const name = urlParams.get('name');
+    repo = urlParams.get('name');
 }
+
+getParams()
 
 languages = []
 datas = []
 
 async function fetchMovies() {
-  await fetch('https://api.github.com/repos/Tenlun/programspacestudio.github.io/languages')
+  await fetch('https://api.github.com/repos/' + repo + '/languages')
     .then( response => response.json() )
     .then( data => json_data = data);
 
