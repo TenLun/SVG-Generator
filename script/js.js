@@ -1,38 +1,25 @@
+//即将迁移到Pizza Pie Charts
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 input = urlParams.get('name');
 options = urlParams.get('opt') || null;
 
-//画表
-function RenderChart (datas,label,colors) {
-    const ctx = document.getElementById('myChart');
-    const data = {
-        labels: label,
-        datasets: [{
-            label: '环形图实例',
-            data: datas,
-            backgroundColor: colors,
-            hoverOffset: 4
-        }]
-    };
-    const config = {
-        type: 'doughnut',
-        data: data,
-        options: {
-            responsive: true, // 设置图表为响应式，根据屏幕窗口变化而变化
-            maintainAspectRatio: false,// 保持图表原有比例
-        }
-    };
-    const myChart = new Chart(ctx, config);
-}
-
-function ObjToList(obj,pos){
-    var list = [];
-    for (i in obj) {
-        if (pos) list.push(obj[i]);
-        else list.push(i);
-    }
-    return list
+//画表并提取svg
+function RenderChart (datas,colors) {
+    var myChart = echarts.init(document.getElementById('myChart'), null, {renderer: 'svg'});
+ 
+    myChart.setOption({
+        color: colors,
+        series : [
+            {
+                name: '访问来源',
+                type: 'pie',    // 设置图表类型为饼图
+                radius: '55%',  // 饼图的半径，外半径为可视区尺寸（容器高宽中较小一项）的 55% 长度。
+                data:datas          // 数据数组，name 为数据项名称，value 为数据项值
+            }
+        ]
+    })
 }
 
 async function fetchUser(username) {
@@ -64,10 +51,14 @@ async function fetchUser(username) {
 
     }
 
-    datas = ObjToList(languages,1);
-    labels = ObjToList(languages,0);
+    //数值
+    datas = [];
 
-    RenderChart(datas,labels,colors);
+    for (i in languages) {
+        datas.push({value:languages[i], name:i})
+    }
+
+    RenderChart(datas,colors);
 }
 fetchUser(input);
 
