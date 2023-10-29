@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400">
+	<path d="M 336.5413 96.2468 L 357.4934 82.0986 L 372.4934 82.0986" fill="none" stroke="#e34c26" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 384.9468 130.1141 L 397.2958 120.5841 L 412.2958 120.5841" fill="none" stroke="#563d7c" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 259.0356 302.0878 L 247.4355 320.9159 L 232.4355 320.9159" fill="none" stroke="#f1e05a" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 277.6779 92.2887 L 214.9739 105.2075 L 199.9739 105.2075" fill="none" stroke="#3572A5" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 291.0451 90.3651 L 227.4717 93.2075 L 212.4717 93.2075" fill="none" stroke="#4F5D95" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 293.0314 90.221 L 243.9166 81.2075 L 228.9166 81.2075" fill="none" stroke="#f34b7d" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 297.1748 90.0363 L 294.7896 69.2075 L 279.7896 69.2075" fill="none" stroke="#1d365d" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 299.8259 90.0001 L 297.8022 57.2075 L 282.8022 57.2075" fill="none" stroke="#3178c6" stroke-width="1" paint-order="fill" stroke-opacity="undefined" stroke-dasharray="" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 300 90 A 110 110 0 0 1 368.9323 114.2776 L 300 200 Z" fill="#e34c26" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 368.9323 114.2776 A 110 110 0 0 1 397.4001 148.8803 L 300 200 Z" fill="#563d7c" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 397.4001 148.8803 A 110 110 0 1 1 264.9514 95.733 L 300 200 Z" fill="#f1e05a" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 264.9514 95.733 A 110 110 0 0 1 290.7251 90.3917 L 300 200 Z" fill="#3572A5" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path><path d="M 300 200 L 290.7251 90.3917 A 110 110 0 0 1 291.3652 90.3394 L 300 200 Z" fill="#4F5D95" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 291.3652 90.3394 A 110 110 0 0 1 294.6993 90.1278 L 300 200 Z" fill="#f34b7d" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 294.6993 90.1278 A 110 110 0 0 1 299.6519 90.0006 L 300 200 Z" fill="#1d365d" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<path d="M 300 200 L 299.6519 90.0006 A 110 110 0 0 1 300 90 L 300 200 Z" fill="#3178c6" fill-opacity="1" stroke="none" clip-path="url(#zr2322-clip-0)"></path>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="375.493447204616" y="82.09860293803195" fill="#e34c26" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;">
+		<tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="start" x="375.493447204616" y="82.09860293803195">HTML</tspan>
+	</text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="415.29580470301073" y="120.58414882477673" fill="#563d7c" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;">
+		<tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="start" x="415.29580470301073" y="120.58414882477673">CSS</tspan>
+	</text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="229.4355155278601" y="320.915894452223" fill="#f1e05a" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;">
+		<tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="229.4355155278601" y="320.915894452223">JavaScript</tspan>
+	</text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="196.97385343695134" y="105.20752601409109" fill="#3572A5" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;">
+		<tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="196.97385343695134" y="105.20752601409109">Python</tspan>
+	</text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="209.4717309346469" y="93.20752601409109" fill="#4F5D95" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;"><tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="209.4717309346469" y="93.20752601409109">PHP</tspan>
+	</text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="225.91661370923197" y="81.20752601409109" fill="#f34b7d" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;"><tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="225.91661370923197" y="81.20752601409109">C++</tspan></text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="276.789601982204" y="69.20752601409109" fill="#1d365d" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;"><tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="276.789601982204" y="69.20752601409109">Less</tspan></text>
+	<text dominant-baseline="middle" alignment-baseline="middle" x="279.8022030970883" y="57.20752601409109" fill="#3178c6" fill-opacity="undefined" stroke="none" clip-path="url(#zr2322-clip-1)" style="font: 12px &quot;Microsoft YaHei&quot;;">
+		<tspan dominant-baseline="middle" alignment-baseline="middle" text-anchor="end" x="279.8022030970883" y="57.20752601409109">TypeScript</tspan>
+	</text>
+</svg>
