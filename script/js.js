@@ -20,6 +20,8 @@ function RenderChart (datas,colors) {
             }
         ]
     })
+
+    div2svg();
 }
 
 async function fetchUser(username) {
@@ -60,7 +62,21 @@ async function fetchUser(username) {
 
     RenderChart(datas,colors);
 }
+
 fetchUser(input);
 
+function div2svg() {
+    //delete <defs>
+    var Content = document.getElementsByTagName("defs")[0];
+    Content.parentNode.removeChild(Content);
+
+    var Content = document.getElementsByTagName("svg")[0].innerHTML;
+
+    var svg = "<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>" +
+        Content +
+        "</svg>";
+
+    document.body.innerHTML = svg;
+}
 
 
