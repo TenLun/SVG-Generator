@@ -1,5 +1,6 @@
-export function GET (req: Request)  {
-    let _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+import { Config } from "@netlify/functions";
+
+export default async (req: Request) => {
     function _utf8_decode (utftext) {
         let string = "";
         let i = 0;
@@ -26,6 +27,7 @@ export function GET (req: Request)  {
         return string;
     }
     const decode = (input) => {
+        let _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
         let output = "";
         let chr1, chr2, chr3;
         let enc1, enc2, enc3, enc4;
@@ -59,7 +61,11 @@ export function GET (req: Request)  {
         return string
     }
     
-    const url = new URL(req.url) //url.search//+ %2B = %3D / %2F
+    const url = new URL(req.url)
     var data = decode(strReplace(url))
     return new Response(data,{headers:[['Content-Type','image/svg+xml;charset=utf-8']]});
+}
+
+export const config:Config = {
+    path: "/svg"
 }
