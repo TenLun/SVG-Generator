@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>SVG Generator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.net/codemirror/6.65.7/codemirror.css">
+    <script src="https://cdn.staticfile.net/codemirror/6.65.7/codemirror.js"></script>
+    <link href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+        body{
+            margin: 5vw;
+        }
+        textarea{
+            min-height: 30vh;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div class="card col container m-3 p-0">
+        <div class="card-header"><h1>Code</h1></div>
+        <div class="card-body">
+            <textarea id="code"></textarea>
+        </div>
+    </div>
+
+    <div class="card col container m-3 p-0">
+        <div class="card-header"><h1>Preview</h1></div>
+        <div class="card-body"><div id="imageholder"></div></div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="card col container m-3 p-0">
+        <div class="card-header"><h1>API Link</h1></div>
+        <code class="card-body" id="linkholder"></code>
+        <div class="card-footer"><button type="button" class="btn btn-primary" onclick="generateLink()">Generate</button></div>
+    </div>
+</div>
+<script>
+    var codeInput = document.getElementById('code');
+    var codeOutput = document.getElementById('imageholder');
+    var link = document.getElementById('linkholder');
+    var Editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+        mode : "text/xml",
+        lineNumbers:true
+    });
+
+    Editor.on('change', ()=>{codeOutput.innerHTML = Editor.getValue()} );
+
+    function generateLink(){
+        link.innerText = window.location.origin + "/api/helloworld?xml=" + encodeURIComponent(window.btoa(Editor.getValue()));
+    };
+</script>
+</body>
+</html>
