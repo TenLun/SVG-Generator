@@ -52,7 +52,7 @@
     Editor.on('change', ()=>{codeOutput.innerHTML = Editor.getValue()} );
 
     function generateLink(){
-        link.innerText = window.location.origin + "/api/helloworld?xml=" + encodeURIComponent(window.btoa(Editor.getValue()));
+        link.innerText = window.location.origin + "/svg?xml=" + encodeURIComponent(window.btoa(Editor.getValue()));
     };
 </script>
 </body>
