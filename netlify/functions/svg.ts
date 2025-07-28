@@ -1,11 +1,9 @@
 import { Config } from "@netlify/functions";
 
-export default async (req: Request) => {
-    function _utf8_decode (utftext) {
+function _utf8_decode (utftext) {
         let string = "";
         let i = 0;
         let c = 0;
-        let c1 = 0;
         let c2 = 0;
         let c3 = 0;
         while ( i < utftext.length ) {
@@ -25,8 +23,9 @@ export default async (req: Request) => {
             }
         }
         return string;
-    }
-    const decode = (input) => {
+}
+
+const decode = (input) => {
         let _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
         let output = "";
         let chr1, chr2, chr3;
@@ -51,18 +50,20 @@ export default async (req: Request) => {
         }
         output = _utf8_decode(output);
         return output;
-    }
+}
 
-    function strReplace(string){
-        string = string.search.slice(5)
+function URLdecode(string){
         string = string.replace(/%2B/g,'+')
         string = string.replace(/%3D/g,'=')
         string = string.replace(/%2F/g,'/')
         return string
-    }
+}
+
+export default async (req: Request) => {
     
-    const url = new URL(req.url)
-    var data = decode(strReplace(url))
+    
+    let param = new URL(req.url).searchParams
+    var data = decode(URLdecode(param.get('xml')))
     return new Response(data,{headers:[['Content-Type','image/svg+xml;charset=utf-8']]});
 }
 
