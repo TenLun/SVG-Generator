@@ -22,11 +22,6 @@
             width: 100%;
             box-sizing: border-box;
         }
-        #themetoggle{
-            position: fixed;
-            right: 3px;
-            bottom: 3px;
-        }
     </style>
 </head>
 
@@ -49,11 +44,17 @@
     <div class="card col container p-0">
         <div class="card-header"><h1>API Link</h1></div>
         <code class="card-body" id="linkholder"></code>
-        <div class="card-footer"><button type="button" class="btn btn-primary" onclick="generateLink()">Generate</button></div>
+        <div class="card-footer">
+            <button type="button" class="btn btn-primary" onclick="generateLink()">Generate</button>
+            <button type="button" class="btn btn-primary" onclick="CopyLink()">Copy</button>
+        </div>
     </div>
 </div>
 
-<button onclick="toggleTheme()" type="button" class="btn" id="themetoggle">☀️</button>
+<button onclick="toggleTheme()" type="button" class="btn" style="position: fixed; right: 3px; bottom: 3px">☀️</button>
+<button type="button" class="btn" style="position: fixed; left: 3px; bottom: 3px;" >
+    <a href="https://github.com/Tenlun/SVG-Generator"><img id="github" style="height:20px;filter: invert(1);" src="https://www.svgrepo.com/show/512317/github-142.svg" alt="github" load="lazy" /></a>
+</button>
 
 </body>
 </html>
